@@ -6,11 +6,15 @@
 #include "palindrome.h"
 
 void is_palindrome(char* str) {
-  assert_string_equal(palindrome(str), "Yes");  
+  char *pal = palindrome(str);
+  assert_string_equal(pal, "Yes"); 
+  free(pal);
 }
 
 void not_palindrome(char* str) {
-  assert_string_equal(palindrome(str), "No");  
+  char *pal = palindrome(str);
+  assert_string_equal(pal, "No");  
+  free(pal);
 }
 
 void test_empty_str(void) {
