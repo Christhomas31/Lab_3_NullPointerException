@@ -1,0 +1,7 @@
+#include <stdlib.h>
+
+int *array_merge(int num_arrays, int *sizes, int **values){
+  int *uniq;
+  int *result;
+    
+}
